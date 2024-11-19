@@ -1,0 +1,26 @@
+/* typography.css */
+
+h2 {
+    color: #b71c1c;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #b71c1c;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.list-item {
+    font-size: 1.1rem;
+    color: #1976d2;
+}

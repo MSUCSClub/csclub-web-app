@@ -1,0 +1,40 @@
+/* tutorials.css */
+
+.tutorial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tutorial-item {
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+.tutorial-item:hover {
+    background-color: #f0f0f0;
+}
+
+.tutorial-title {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    margin-bottom: 8px;
+}
+
+.tutorial-description {
+    color: #616161;
+    font-size: 1rem;
+}
+
+/* Optional additional styles */
+.news-story {
+    transition: transform 0.2s;
+}
+
+.news-story:hover {
+    transform: translateY(-5px);
+}
+  

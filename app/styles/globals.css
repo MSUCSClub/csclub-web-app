@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+  html, body {
+    height: 100%;
+    font-family: var(--font-geist-sans), sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Flex Layout for Full Page */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #d32f2f; /* Minot State Red */
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Styling */
+  .nav-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Main Content Area */
+  main {
+    flex: 1;
+    padding-top: 80px; /* Prevent content overlap with Navbar */
+    padding-bottom: 80px; /* Prevent content overlap with Footer */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Image Styles */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-red {
+    color: #d32f2f;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-top: 0.5rem;
+    }
+  
+    .nav-logo img {
+      width: 50px;
+    }
+  
+    main {
+      padding-top: 100px; /* Extra padding for mobile Navbar */
+    }
+  
+    footer {
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  }  
